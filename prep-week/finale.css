@@ -3,7 +3,11 @@ header {
     border: 5px; 
     mask-border-width: 28px;
     border-style: dashed;
-    margin: 25px;
+    margin-top: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 18px;
+    /* margin: 18px; */
     /* display: flex; */
 }
 p {
@@ -15,8 +19,11 @@ p {
     margin-top: 45%;
     padding: 50;
 }
+.ad{
+    /* flex: 10px; */
+}
 .ads{
-    flex: 1;
+    /* flex: 10px; */
     /* margin-top: 45%; */
     /* text-align: center; */
     /* margin-left: auto; */
@@ -42,22 +49,23 @@ h1 {
 }
 img {
     display: inline-block;
-    margin: 25px 10px;
+    margin: ;
     }
 .ads{
-    
+/* flex: 3; */
    text-align: center; 
    border: 5px dotted;
-   padding: 20px;
-   margin-right:60px ;
-   margin-left:60px ;
+   padding: 30px;
+   /* margin-right:px ; */
+   margin-left:150px ;
    margin-top:20% ;
+   width: 20%;
 
 }
 .right {
     position:absolute; 
     top:44px; 
-    right:60px;
+    right: 180px;
     /* border: 1px solid rgba(144, 245, 245.5); */
     /* background-color: aquamarine;    */
     border: 3px ridge
@@ -103,8 +111,10 @@ article {
     /* border-color: rgb(1, 255, 255) 1px; */
     text-align: center;
     /* border:solid; */
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    margin-right: 8.5%;
 }
 .pic-twin {
     width: 220px;
@@ -117,9 +127,12 @@ article {
 }
 .btm-art{
     border: 1px double;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 25px; */
+    /* margin-left: 25px; */
     /* border-bottom: -1px; */
+    width: 70%;
     
 }
 /* .top
