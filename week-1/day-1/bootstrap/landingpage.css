@@ -1,0 +1,60 @@
+header{
+    display:
+    ;
+    width: 50%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 100px;
+}   
+.signin{
+    /* margin:0 10px; */
+    float: right;
+    margin-right: 2px;
+}
+.main {
+    background-image: url("backgroundsea2.jpeg");
+    width: 100%;
+    height: 400px;
+    /* background-repeat: no-repeat; */
+}
+.center{
+    position: absolute;
+    top: 35%;
+    transform: translate(0, -50%);
+    /* border: 5px solid #FFFF00; */
+    padding: 34%; 
+    width: 27%;
+    
+}
+.signup{
+    size: 20px;
+    /* text-size-adjust: 20px; */
+    padding: 10px;
+    display: inline-block;
+    
+}
+.btn{
+    color: white;
+    border-radius: 4px;
+    background-color:blue ;
+    padding:8px 28px;
+    
+    
+}
+.email{
+    margin-left: 5%;
+    height: 10px;
+     width: 50%;
+}
+.box{
+    margin: -70px;
+    padding-left:7%;
+    padding-right:7%;
+}
+.grey{
+    color: grey;
+}
