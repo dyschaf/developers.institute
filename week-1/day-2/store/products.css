@@ -1,0 +1,29 @@
+nav{
+    /* display: flex; */
+    /* background-color: black; */
+    /* color: white; */
+}
+.container{
+    display: inline-block;
+    position: relative;
+}
+
+.pic{
+    /* float: inline-start; */
+    /* display: flex; */
+    /* display: inline-flex; */
+    background-repeat: no-repeat;
+    background-size: 270px 350px;
+    /* width: 1000px; */
+    height: 350px;
+    
+}
+.pic1{
+    background-image: URL('image1.png');
+}
+.pic2{
+background-image: URL('image2.png');
+}
+footer{
+   /* display:  inline-block; */
+}

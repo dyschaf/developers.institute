@@ -1,19 +1,37 @@
 header{
-    display:
-    ;
-    width: 50%;
+    display:flex;
+    
+    width: 100%;
 }
 .container{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center; */
     text-align: center;
     padding: 100px;
 }   
+.title{
+    /* position:absolute; */
+    margin-top: 0px;
+    left:0;
+    
+    margin-left: 15%;
+    /* color: white; */
+    border-radius: 4px;
+    /* background-color:blue ; */
+    /* padding:8px 18px; */
+}
 .signin{
     /* margin:0 10px; */
-    float: right;
-    margin-right: 2px;
+    /* float: right; */
+    position:absolute;
+    top: 5px;
+    right:0;
+    margin-right: 15%;
+    color: white;
+    border-radius: 4px;
+    background-color:blue ;
+    padding:8px 18px;
 }
 .main {
     background-image: url("backgroundsea2.jpeg");
