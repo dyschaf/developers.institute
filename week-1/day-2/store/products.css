@@ -5,25 +5,60 @@ nav{
 }
 .container{
     display: inline-block;
-    position: relative;
+    padding: 20px ;
+    width:270px;
+    height:350px;
 }
 
-.pic{
+.img{
     /* float: inline-start; */
     /* display: flex; */
     /* display: inline-flex; */
     background-repeat: no-repeat;
-    background-size: 270px 350px;
-    /* width: 1000px; */
-    height: 350px;
-    
+    width: 270px;
+    height: 350px;   
+}
+.price{
+    text-align: center;
 }
 .pic1{
-    background-image: URL('image1.png');
+    /* background-image: URL('image1.png'); */
 }
 .pic2{
-background-image: URL('image2.png');
+/* background-image: URL('image2.png'); */
 }
 footer{
    /* display:  inline-block; */
+}
+.red-stickers{
+    position: relative;
+    top: -330px; left: 165px;
+    border-radius: 100%;
+    font-size: 20px;
+    height:50px;
+    width: 50px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+}
+.green-stickers{
+    position:relative;
+    top: -330px;
+    left: 5px;
+    background-color: green;
+    /* width: 20px; */
+    /* height: 20px; */
+    border-radius: 100%;
+    font-size: 20px;
+    height:50px;
+    width: 50px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    /* line-height: 500px */
+
+}
+.green{
+    color:green;
 }
