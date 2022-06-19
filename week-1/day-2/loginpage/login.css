@@ -15,7 +15,7 @@ a{
     text-decoration:none;
 }
 .reg{
-    background: linear-gradient(#2b1a2a, #aa10e7);
+    background: linear-gradient(to bottom right, #2b1a2a, #aa10e7);
     /* background: gradient darkmagenta ; */
     height: 500px;
     width: 50%;
