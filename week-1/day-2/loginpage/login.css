@@ -2,27 +2,53 @@
 body{
     display: flex;
     text-align: center;
+    justify-content: center;
     /* width: 0%; */
     margin-top: 7%;
     padding: 7%; 
 }
 .login{
- text-decoration: none;
-    width: 50%;
-    height: 100%;
+    text-decoration: none;
+    padding-top: 80px;
+    /* margin: 10%; */
+    width: 25%;
+    height: 70%;
+    justify-content: center;
 }
 a{
     text-decoration:none;
+    margin: px 0px;
 }
 .reg{
+    padding-top: 80px;
     background: linear-gradient(to bottom right, #2b1a2a, #aa10e7);
     /* background: gradient darkmagenta ; */
     height: 500px;
-    width: 50%;
+    /* margin: 10%; */
+    width: 25%;
+    justify-content: center;
+
 }
 .email{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
-/* .password{ */
-    margin-top: 30px;
+.password{
+    margin-top: 10px;
+    font-size: 25px;
+
+    /* justify-content: center; */
+}
+#remember-me{
+    /* position: ; */
+    /* margin-right: 55px ; */
+    padding-left: 55px;
+}
+.reg-btn{
+    border: black solid 1px;
+    border-radius: 38%;
+    font-size: 20px;
+    background-color: #aa10e7;
+    padding: 10px;
+    
 }
