@@ -1,7 +1,30 @@
+*{box-sizing: border-box;}
 nav{
     /* display: flex; */
-    /* background-color: black; */
-    /* color: white; */
+
+    /* position:fixed; */
+    background-color: black;
+    color: white;
+    height: 40PX;
+    margin:-10px;
+
+}
+.crown{
+    margin: 10PX;
+    size:20px;
+    
+}
+.product{
+    margin-left: 87%;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+.fa-eye, .fa-bag-shopping, .fa-cart-shopping{
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    justify-content: center;
 }
 .container{
     display: inline-block;
@@ -11,12 +34,57 @@ nav{
 }
 
 .img{
-    /* float: inline-start; */
-    /* display: flex; */
-    /* display: inline-flex; */
     background-repeat: no-repeat;
     width: 270px;
     height: 350px;   
+}
+.hover:hover{
+    color: blue;
+}
+.hover{
+    /* position: relative; */
+    /* left: 50%; */
+    /* text-align: center; */
+    /* top: -240px; */
+    height: 30px;
+    width: 30%;
+    /* margin-left: 7.3%; */
+    /* backgroundcolor: white; */
+    /* padding: %, */
+    /* margin-top: -1000px; */
+}
+.container:hover .overlay{
+   display:flex;
+    /* background-color: white; */
+    margin:0px;
+    padding: 0px;
+   top:50%;
+   /* justify-content: center; */
+   /* margin-top: 50px; */
+   color: aqua;
+}
+.showwishlist{
+    display: none;
+}
+.wishlist:hover  + .showwithlist{
+    text-decoration: aqua;
+    color: red;
+}
+.overlay{
+    display: none;
+    text-align: center;
+    /* height: 30%; */
+    /* width: 100%; */
+    position:absolute;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom:100px;
+    justify-content: center;
+    /* padding-top 100px; */
+    /* padding-right:50px ; */
+    font-size:14px
+
 }
 .price{
     text-align: center;
@@ -46,7 +114,7 @@ footer{
     position:relative;
     top: -330px;
     left: 5px;
-    background-color: green;
+    background-color: rgb(72, 202, 187);
     /* width: 20px; */
     /* height: 20px; */
     border-radius: 100%;
@@ -61,4 +129,15 @@ footer{
 }
 .green{
     color:green;
+}
+.sticker{
+    border: red 1px solid;
+    position: relative;
+    width: 270px;
+}
+button{
+    border: solid 1px;
+    color: rgb(142, 141, 141);
+    border-radius:4px;
+    background-color: white;
 }
