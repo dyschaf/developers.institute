@@ -1,0 +1,28 @@
+*{box-sizing: border-box;}
+body{
+    display: flex;
+    text-align: center;
+    /* width: 0%; */
+    margin-top: 7%;
+    padding: 7%; 
+}
+.login{
+ text-decoration: none;
+    width: 50%;
+    height: 100%;
+}
+a{
+    text-decoration:none;
+}
+.reg{
+    background: linear-gradient(#2b1a2a, #aa10e7);
+    /* background: gradient darkmagenta ; */
+    height: 500px;
+    width: 50%;
+}
+.email{
+    margin-bottom: 30px;
+}
+/* .password{ */
+    margin-top: 30px;
+}
