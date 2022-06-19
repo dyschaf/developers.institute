@@ -11,21 +11,25 @@ body{
     text-decoration: none;
     padding-top: 80px;
     /* margin: 10%; */
-    width: 25%;
+    /* width: 400px; */
     height: 70%;
+    /* margin-right: 10%; */
+    right:5%;
     justify-content: center;
+    padding: 80px;
+    /* margin-left: 20px; */
 }
 a{
     text-decoration:none;
-    margin: px 0px;
+    /* margin: px 0px; */
 }
 .reg{
     padding-top: 80px;
     background: linear-gradient(to bottom right, #2b1a2a, #aa10e7);
     /* background: gradient darkmagenta ; */
     height: 500px;
-    /* margin: 10%; */
-    width: 25%;
+    left: 20%;
+    width: 400px;
     justify-content: center;
 
 }
@@ -42,7 +46,7 @@ a{
 #remember-me{
     /* position: ; */
     /* margin-right: 55px ; */
-    padding-left: 55px;
+    /* padding-left: 55px; */
 }
 .reg-btn{
     border: black solid 1px;
