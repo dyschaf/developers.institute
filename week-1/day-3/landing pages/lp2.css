@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+div{
+    display:grid;
+    grid-column:;
+}
+form{
+    text-align: center;
+}
+h1{
+text-align: center;
+}

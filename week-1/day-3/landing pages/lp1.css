@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+div h1 {
+    color: rgb(86, 26, 116);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+    grid-gap:10vw ;
+}
+.review{
+    position: relative;
+}
+img{
+    /* position:absolute; */
+    width:25px;
+    /* bottom: 40px; */
+    margin-bottom: -15px;
+    color: blue;
+    
+}
+div h6 ,.pink{
+    background-color: pink;
+    /* height: 40px; */
+    border:solid 10px pink;
+    margin: 0;
+    
+}
+.container2{
+    display: flexbox;
+    justify-content: center;
+    padding: 5vw;
+    grid-gap:10vw ;
+.box2{
+    margin-top: -200px;
+    position:absolute;
+}

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+/* header */
+.no-bold{
+    font-weight:normal
+}
+img{
+    /* position:absolute; */
+    width: 140px;
+
+    position: absolute;
+    top: -12px;
+    right: 10vw;
+    /* margin-top: -200px;
+    margin-left: 50vw;
+    margin-right:60vw; */
+   /* padding-right: 10vw; */
+
+    border-bottom: solid 1vw gold;
+}
+header{
+    position: relative;
+    padding-left: 25px;
+    margin-top: 0px;
+
+}
+hr{
+    color: gray ;
+}
+/* Body */
+span{
+    border-bottom: solid 5px gold;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.wrap{
+flex:2;
+padding: 50px;
+}
+.box2 {
+    position: relative;
+    padding-left: 10vw;
+    padding-right: -20vw;
+
+}
+.education ,.contact{
+    padding-left: 25px;
+    border-right: solid 10px rgb(183, 181, 181);
+}
