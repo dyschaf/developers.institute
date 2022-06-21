@@ -22,6 +22,7 @@ nav{
 }
 .fa-eye, .fa-bag-shopping, .fa-cart-shopping{
     background-color: white;
+    /* position: relative; */
     margin: 10px;
     padding: 20px;
     justify-content: center;
@@ -35,8 +36,8 @@ nav{
 
 .img{
     background-repeat: no-repeat;
-    width: 270px;
-    height: 350px;   
+    width: 260px;
+    height: 340px;   
 }
 .hover:hover{
     color: blue;
@@ -61,13 +62,13 @@ nav{
    top:50%;
    /* justify-content: center; */
    /* margin-top: 50px; */
-   color: aqua;
+   color: rgb(72, 202, 187);
 }
 .showwishlist{
     display: none;
 }
 .wishlist:hover  + .showwithlist{
-    text-decoration: aqua;
+    text-decoration: rgb(72, 202, 187)
     color: red;
 }
 .overlay{
@@ -96,7 +97,7 @@ nav{
 /* background-image: URL('image2.png'); */
 }
 footer{
-   /* display:  inline-block; */
+   display:  inline-block;
 }
 .red-stickers{
     position: relative;
@@ -131,7 +132,7 @@ footer{
     color:green;
 }
 .sticker{
-    border: red 1px solid;
+    /* border: red 1px solid; */
     position: relative;
     width: 270px;
 }
@@ -139,5 +140,11 @@ button{
     border: solid 1px;
     color: rgb(142, 141, 141);
     border-radius:4px;
+
     background-color: white;
+    font-size: 25px;
+}
+button:hover{
+    background-color: rgb(72, 202, 187);
+    color: white;
 }
