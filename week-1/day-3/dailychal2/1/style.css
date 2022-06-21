@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+}
+.box{
+    width: 5vw;
+    height: 5vh;
+}
+.orange{
+    background-color: orange;
+}
+.tan{
+    background-color: tan;
+}
+.maroon{
+    background-color: maroon;
+}

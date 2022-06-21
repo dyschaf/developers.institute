@@ -11,9 +11,7 @@ div h1 {
     padding: 5vw;
     grid-gap:10vw ;
 }
-.review{
-    position: relative;
-}
+
 img{
     /* position:absolute; */
     width:25px;
@@ -30,11 +28,32 @@ div h6 ,.pink{
     
 }
 .container2{
-    display: flexbox;
-    justify-content: center;
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
     padding: 5vw;
+    height: 400px;
     grid-gap:10vw ;
-.box2{
-    margin-top: -200px;
-    position:absolute;
+}
+.review{
+    /* position: relative; */
+    height: 400px;
+}
+.r1 {
+    align-items: flex-start;
+    align-content: flex-end;
+}
+.r3{
+    justify-content: flex-end;
+}
+@media all and (max-width: 480px) { 
+.container{
+    flex-direction: column;
+}
+.container2{
+    flex-wrap: wrap;
+}
 }

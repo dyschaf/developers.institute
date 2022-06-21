@@ -13,6 +13,7 @@
     </header>
     <h1>DOWNLOAD NOW</h1>\
     <form action="/action_page.php">
+    <div class="container">
         <div>
             <label for="fname">First name*:</label>
             <input type="text" id="fname" name="fname">
@@ -30,15 +31,17 @@
         <div><label for="website">WEBSITE URL*</label>
             <input type="URL" id="website" name="website">
         </div>
-        <div><label for="website">WEBSITE URL*</label>
-            <input type="URL" id="website" name="website">
-        </div>
         <div><label for="company">COMPANY NAME*</label>
-            <select phaseholder="-Please Select-"><ul>
-                <li>other</li><ul>-Please Select-</select>
+            <input type="text" id="company" name="company">
         </div>
-        
-            <li>other</li><ul>-Please Select-</select>
+    </div>
+    <div class="bottom">
+            <p>HOW MANY EMPLOYEES WORK THERE?*</p>
+            <select phaseholder="-Please Select-"></select>
+                <!-- <li>other</li><ul>-Please Select-</select> -->
+       
+    
+            <!-- <li>other</li><ul></select> -->
             <ul>DOES YOUR COMPANY SELL ANY OF THE FOLLOWING SERVICES:
                 <li>WEB DESIGN</li>
                 <li>ONLINE MARKET</li>
@@ -46,12 +49,13 @@
                 <li>ADVERTING AGENCY SERVICES*</li>
             </ul><br>
         <select phaseholder="-Please Select-"><br>
-        <div>
+        <div textin>
             <label for="ckeckbox">SUBCRIBE TO HUBSPORT'S MARKETING BLOG</label>
             <input type="checkbox" id="checkbox" name="checkbox"><p>SUBSCRIBE TO HUBSPOT'S MARKETING BLOG</p>
         </div>
-        <button>DOWNLOAD NOW</button>
-      </form>
+        <button class="btn">DOWNLOAD NOW</button></div>
+    </div>
+    </form>
 
     
 </body>

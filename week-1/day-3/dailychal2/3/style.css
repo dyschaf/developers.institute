@@ -1,0 +1,35 @@
+*{box-sizing: border-box;}
+div{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    grid-gap: 0px;
+    /* border:red 1px solid; */
+    width: 320px;
+
+}
+.box{
+    width: 20px;
+    height: 20px;
+}
+.light-red{
+    background-color: rgb(254, 107, 107);
+}
+.white{
+    background-color: white;
+}
+.red {
+    background-color: red;
+}
+.border-top{
+    border-top:red 1px solid ;
+}
+.border-bottom{
+    border-bottom:red 1px solid ;
+}
+.border-left{
+    border-left:red 1px solid ;
+
+}
+.border-right{
+    border-top:red 1px solid ;
+}
