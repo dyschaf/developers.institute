@@ -51,3 +51,6 @@ padding: 50px;
     padding-left: 25px;
     border-right: solid 10px rgb(183, 181, 181);
 }
+/* .contact, div{ */
+    border:pink solid 1px;
+}
