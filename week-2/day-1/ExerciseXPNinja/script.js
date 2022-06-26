@@ -22,9 +22,24 @@ console.log(true != true);
 //perdiction false
 
 // Exercise 2 : Ask For Numbers
-let num ="2,3"
-sum = Number.num
-console.log(sum);
+let num ='2,3';
+number = num.split(',');
+// number1 = Number(num);
+console.log(Number(num[0]+[1]));
 
 // Exercise 3 : Find Nemo
-prompt('I love Nemo 
+let findingNemo = prompt['did you find nemo'];
+nemo = findingNemo;
+alert(findingNemo.indexOf['nemo']);
+// console.log(nemo(indexOf('nemo')));
+
+// Exercise 4 : Boom
+let boom = prompt()
+if (boom <= 2) {
+console.log("boom")
+}
+else if (boom = 3 ) {
+    console.log("booom")
+}
+else if (boom = 4) {
+    console.log("boooom")};
