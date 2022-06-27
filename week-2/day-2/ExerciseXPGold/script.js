@@ -40,25 +40,30 @@ if (grade >= 90){
 // If the length of the string is at least 3 and the string doesn’t end with “ing”, add ‘ing’ to the end of the string.
 // If the length of the string is at least 3 and the string ends with “ing” add “ly” to it’s end.
 // If the length of the string is less than 3, leave it unchanged.
+let verbing = prompt('it must be a verb')
+if ( verbing.length >= 3 &! verbing.match('ing') ){
+console.log(verbing + 'ing');
+}else if( verbing.match('ing'))
+{console.log(verbing + 'ly')
+}else{console.log(verbing)}
 
+// let userCart = {
+// 	username : "John",
+// 	password: 1234,
+//     lastname: 'Smith',
+// 	isUserSignedIn : true,
+// 	cart : {
+// 		apple : 2,
+// 		banana : 1,
+// 		pear : 5,
+// 	},
+// 	prices : {
+// 		apple : 0.5,
+// 		banana : 0.8,
+// 		pear : 0.2 / .17,
+// 	}
+// };
+// pearsCart = userCart['cart']['pear'];
+// pearsPrice = userCart['prices']['pear'];
 
-let userCart = {
-	username : "John",
-	password: 1234,
-    lastname: 'Smith',
-	isUserSignedIn : true,
-	cart : {
-		apple : 2,
-		banana : 1,
-		pear : 5,
-	},
-	prices : {
-		apple : 0.5,
-		banana : 0.8,
-		pear : 0.2 / .17,
-	}
-};
-pearsCart = userCart['cart']['pear'];
-pearsPrice = userCart['prices']['pear'];
-
-console.log(pearsCart * pearsPrice)
+// console.log(pearsCart * pearsPrice)

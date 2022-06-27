@@ -48,6 +48,18 @@ if (input %2 == 0  ){
 // For example, if there are 5 users, it should display:
 // name_user1, name_user2 and 3 more are online
 let users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+if (users.length > 3){
+console.log(users[0]+' '+users[1]+ users.length()-2 +' '+ 'more are online')
+}else if (users.length == 2){
+    console.log(users.length[0]+' '+ users[1]+' '+ 'is online')
+}else if (users.length == 1){
+    console.log(users[0] +' '+'is online')
+}else{
+    console.log('no is online');
+}
 
+// }else{
+// console.log(users[0]+ users[1]+users.length(-2)+ 'more are online')
+// }
 
 
