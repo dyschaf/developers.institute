@@ -28,9 +28,9 @@ number = num.split(',');
 console.log(Number(num[0]+[1]));
 
 // Exercise 3 : Find Nemo
-let findingNemo = prompt['did you find nemo'];
-nemo = findingNemo;
-alert(findingNemo.indexOf['nemo']);
+let findingNemo = prompt('did you find nemo');
+// nemo = findingNemo;
+alert(findingNemo.indexOf('nemo'));
 // console.log(nemo(indexOf('nemo')));
 
 // Exercise 4 : Boom
