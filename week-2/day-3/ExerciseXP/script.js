@@ -50,6 +50,14 @@ console.log(`My #${num+= 1} choise is ${col}`);
 // While the number is smaller than 10 continue asking the user for a new number.
 // Tip : Which while loop is more relevant for this situation?
 // do{userNumber = Number(prompt('enter a number'))} while(userNumber >=9));
+let number;
+do {
+    number = parseInt(prompt('Give me a number'));
+}
+while(number < 10 || Number.isNaN(number)); 
+// let number;
+// do{number= prompt('chose anumber')
+// console.log(typeof(number))} while(number < 10  typeof(number)=='NaN' )
 // Exercise 4 : Building Management
 // Instructions:
 // Review About Objects
@@ -76,7 +84,62 @@ let building = {
 console.log(building.numberOfFloors);
 // for(let floor in building)
 console.log(building.numberOfAptByFloor.firstFloor+building.numberOfAptByFloor.thirdFloor)
+console.log(building['nameOfTenants'][1] + building['numberOfRoomsAndRent']['dan'][0])
+if (building.numberOfRoomsAndRent['sarah'][1]+building.numberOfRoomsAndRent['david'][1] > building.numberOfRoomsAndRent['dan'][1]){
+    console.log(building.numberOfRoomsAndRent['dan'][1]= 1200)
+}
+// Exercise 5 : Family
+// Instructions
+// Create an object called family with a few key value pairs.
+// Using a for in loop, console.log the keys of the object.
+// Using a for in loop, console.log the values of the object.
+let family={
+pnina:1991,
+mordy:1992,
+rivka:1994,
+pia:1995,
+};
+for (i in  family){
+    console.log(i+' '+family[i])
+}
+let details = {
+    my: 'name',
+    is: 'Rudolf',
+    the: 'raindeer'
+  }
+  for (i in  details){
+    console.log(i+' '+details[i])}
+// Exercise 7 : Secret Group
+// Instructions
+let names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
+// A group of friends have decided to start a secret society. The society’s name will be the first letter of each of their names sorted in alphabetical order.
+// Hint: a string is an array of letters
+// Console.log the name of their secret society. The output should be “ABJKPS”
+// let name1=names.sort;
+// let name;
+names.sort();
+let inital='';
+
+// names.charAt(0);
+
+// console.log(names);
+// names.toString();
+// console.log(names);
+for (i of names){
+    inital += i[0];
+    
+// names.toString();
+// names.charAt(0);
+// names.split("");
+// names.sort;
+// join('');
+}
+console.log(inital);
+// name1.forEach((name)=>{
+//     console.log(name.charAt(0));
+//   });
 // let fruits = ["apple", "banana", "pear", "melon"];
+
 // for (i = 0; i < fruits.length; i++){
 //      fruits[i]= fruits[i]+'s';
 // }

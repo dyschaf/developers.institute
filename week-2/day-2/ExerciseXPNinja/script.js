@@ -15,7 +15,28 @@ let jonny = 1984
 // Must only contain numbers
 // Must not contain any whitespace (spaces)
 // Must not be greater than 5 digits in length
-let zipcode = prompt('zipcode');
-if (zipcode.length === 5 && zipcode != (/^[0-9.,]+$/)) {
+let zipcode = parseInt(prompt('zipcode'));
+if ( zipcode >= 10000 && !Number.isNaN(zipcode)) {
     console.log('sucsess')
 }else{console.log('error')};
+
+// Harder exercise
+// Hint : Use Regular Expressions
+
+// Prompt the user for a word and save it to a variable.
+// Delete all the vowels of the word and console.log the result.
+// Bonus: Replace the vowels with another character and console.log the result
+input = prompt()
+const vowels = ['a', 'i', 'e', 'o','u']
+newInput = '';
+// input.replace(/a/g,'');
+// input.replace(/e/g,'');
+// input.replace(/o/g,'');
+// input.replace(/i/g,'');
+// input.replace(/u/g,'');
+for (let i of input){
+    if (vowels.indexOf(i) === -1){
+        newInput += i;
+    }
+}
+console.log(newInput);
