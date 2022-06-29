@@ -36,6 +36,19 @@ const numbers = [5,0,9,1,7,4,2,6,3,8];
 // // numbers.toString();
 // // numbers.join("+");
 // console.log(sum+=numbers[i])}
-numbers.toString();
-numbers[6].join("+");
-console.log(numbers);
+// num = numbers.toString();
+let=temp;
+for (let i=0; i<number.length -1; i++){
+    // temp=number[i];
+    for(let j=1; j<number.length; i++){
+        if (number[i];<number[j]){
+            temp=number[j]
+            number[j]=number
+            number[i]=temp
+        }
+    }
+}
+console.log(number)
+
+
+
