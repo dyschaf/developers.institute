@@ -119,17 +119,17 @@ console.log(myBill())
 // The array [25, 20, 5, 0] represents 25 quarters, 20 dimes, 5 nickels and 0 pennies.
 // The function should return true, since having 25 quarters, 20 dimes, 5 nickels and 0 pennies gives you 6.25 + 2 + .25 + 0 = 8.50 which is bigger than 4.25 (the total amount due)
 function changeEnough(itemPrice, amountOfChange){
-    let amount =amountOfChange[0].toString()*0.25;
-    let amount1 =amountOfChange[1].toString()*0.15;
-    let amount2 = amountOfChange[2].toString()*0.05;
-    let amount3 =amountOfChange[3].toString()*0.01;
+    let amount =amountOfChange[0]*0.25;
+    let amount1 =amountOfChange[1]*0.15;
+    let amount2 = amountOfChange[2]*0.05;
+    let amount3 =amountOfChange[3]*0.01;
     if (amount+ amount1 + amount2+ amount3>=itemPrice){
         return true;
     }else {return false;}
 }
-changeEnough(4.25, [25, 20, 5, 0])
-changeEnough(14.11, [2,100,0,0])
-console.log(changeEnough)
+console.log(changeEnough(4.25, [25, 20, 5, 0]))
+console.log(changeEnough(14.11, [2,100,0,0]))
+// console.log(changeEnough)
 // Exercise 6 : Vacations Costs
 // Instructions
 // Let’s create functions that calculate your vacation’s costs:
@@ -201,6 +201,5 @@ function rentalCarCost(){
     }
 
 // console.log(rentalCarCost())
-function totalVacationCost(){
-    
-}
+function totalVacationCost(){}
+
