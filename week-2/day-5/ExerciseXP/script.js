@@ -1,10 +1,11 @@
 function playTheGame(){
-let text;
+// let text;
 if (confirm("Press a button!") == true) {
 } else {
   return "no problem, goodbye";
 }
-
+input()
+compareNumbers(userNumber,computerNumber)
 }
 let computerNumber
 let userNumber
