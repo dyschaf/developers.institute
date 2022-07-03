@@ -1,0 +1,69 @@
+<!-- In this exercise we will be creating a webpage with a black background as the universe and we will fill the universe with planets and their moons.
+We will provide the HTML page.
+You only have to work with a JS file.
+
+Create an array which value is the planets of the solar system.
+For each planet in the array, create a <div> using createElement. This div should have a class named "planet".
+Each planet should have a different background color. (Hint: you could add a new class to each planet - each class containing a different background-color).
+Finally append each div to the <section> in the HTML (presented below).
+Bonus: Do the same process to create the moons.
+Be careful, each planet has a certain amount of moons. How should you display them?
+Should you still use an array for the planets ? Or an array of objects ? -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                border: 2px solid rgb(199, 117, 117);
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+                border: 5px solid red;
+            }
+        </style>
+    </head>
+    <body>
+
+    <section class="listPlanets"></section>
+
+    <script>
+        let plants=['Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto']
+
+        for(i=0; i<plants.length;i++){
+            let div=document.createElement('div')
+            div.setAttribute('class','planet')
+            div.setAttribute('id', 'planet'+i)
+            console.log(div)
+            document.body.appendChild(div)
+        }
+        // document.body.appendChild(div)
+        document.getElementById('planet0').style.backgroundColor='lightyellow'
+        document.getElementById('planet1').style.backgroundColor='pink'
+        document.getElementById('planet2').style.backgroundColor='brown'
+        document.getElementById('planet3').style.backgroundColor='lightgray'
+        document.getElementById('planet4').style.backgroundColor='yellow'
+        document.getElementById('planet5').style.backgroundColor='orange'
+        document.getElementById('planet7').style.backgroundColor='blue'
+        document.getElementById('planet8').style.backgroundColor='green'
+        document.getElementById('planet9').style.backgroundColor='red'
+        
+    </script>
+    </body>
+</html>
