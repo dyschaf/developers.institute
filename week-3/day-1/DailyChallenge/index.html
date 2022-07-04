@@ -27,7 +27,7 @@ Should you still use an array for the planets ? Or an array of objects ? -->
                 text-align: center;
                 padding: 10px;
                 position: relative;
-                border: 2px solid rgb(199, 117, 117);
+                border: 2px solid white;
             }
             .moon {
                 position: absolute;
@@ -44,27 +44,32 @@ Should you still use an array for the planets ? Or an array of objects ? -->
     <section class="listPlanets"></section>
 
     <script>
-        let plants=['Sun', 'Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto']
-
-        for(i=0; i<plants.length;i++){
-            let div=document.createElement('div')
-            div.setAttribute('class','planet')
-            // div.setAttribute('class','planet'+1)
-            div.setAttribute('id', 'planet'+i)
-            console.log(div)
-            document.body.appendChild(div)
-        }
-        // document.body.appendChild(div)
-        document.getElementById('planet0').style.backgroundColor='lightyellow'
-        document.getElementById('planet1').style.backgroundColor='pink'
-        document.getElementById('planet2').style.backgroundColor='brown'
-        document.getElementById('planet3').style.backgroundColor='lightgray'
-        document.getElementById('planet4').style.backgroundColor='yellow'
-        document.getElementById('planet5').style.backgroundColor='orange'
-        document.getElementById('planet7').style.backgroundColor='blue'
-        document.getElementById('planet8').style.backgroundColor='green'
-        document.getElementById('planet9').style.backgroundColor='red'
-        
+        let solarSystem = [
+  {name:'Mercury', moons: 0, color:'orange', radius:2439},
+  {name:'Venus', moons: 0, color:'grey', radius:6051},
+  {name:'Earth', moons:1, color:'blue', radius:6378},
+  {name:'Mars', moons: 2, color:'red', radius:3396},
+  {name:'Jupiter', moons: 79, color:'brown', radius:71492},
+  {name:'Saturn', moons: 82, color:'yellow', radius:60268},
+  {name:'Uranus', moons: 27, color:'ligthblue', radius:25559},
+  {name:'Neptune', moons: 14, color:'darkblue', radius:24764}
+]
+        let root = document.getElementsByClassName('listPlanets')[0];
+for (let i = 0; i < solarSystem.length; i++) {
+  let planet = document.createElement('div');
+  planet.innerText = solarSystem[i].name;
+  planet.classList.add('planet');
+  planet.style.backgroundColor = solarSystem[i].color;
+  let x = 1;
+  while(x <= solarSystem[i].moons){
+    let moon = document.createElement('div');
+    moon.style.left = (x*10)+'px';
+    moon.classList.add('moon');
+    planet.appendChild(moon);
+    x++;
+  }
+  root.appendChild(planet)
+}
     </script>
     </body>
 </html>
