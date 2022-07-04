@@ -24,6 +24,30 @@
     console.log(h1[0])
     let p=document.getElementsByTagName('p')
     document.body.children[0].lastElementChild.remove()
+    let h2 = document.getElementsByTagName('h2')[0]
+    h2.addEventListener('click', function(){
+    document.getElementsByTagName('h2')[0].style.backgroundColor='red'
+        
+    })
+    let h3 = document.getElementsByTagName('h3')[0]
+    console.log(h3)
+    h3.onclick = function(){
+        document.getElementsByTagName('h3')[0].style.display = "none";
+    }
+    let button=document.createElement('button')
+    let article =document.body.children[0]
+    console.log(article)
+    article.appendChild(button)
+    button.innerHTML+='click'
+    button.addEventListener('click', function(){
+        let ps =document.getElementsByTagName('p')
+        // console.log(bold)
+        for(let i=0; i<ps.length; i++){
+        ps[i].style.fontWeight = "900";
+    }})
+
+
+    
     </script>
 </body>
 </html>

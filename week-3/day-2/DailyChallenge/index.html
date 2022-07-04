@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Challenge: Mad Libs</title>
+ </head>
+ <body>
+
+    <h1>Mad Libs</h1>
+
+    <form id="libform">
+        <label for="noun">Noun:</label><input type="text" id="noun"><br>
+        <label for="adjective">Adjective:</label><input type="text" id="adjective"><br>
+        <label for="person">Someone's Name:</label><input type="text" id="person"><br>
+        <label for="verb">Verb:</label><input type="text" id="verb"><br>
+        <label for="place">A place:</label><input type="text" id="place"><br>
+        <button id="lib-button">Lib it!</button>
+    </form>
+
+    <p>Generated story: 
+    <span id="story"></span>
+    </p>
+
+    <script>
+        let libButton=document.getElementById('lib-button')
+        let adjective=document.getElementById('adjective')
+        let person=document.getElementById('person')
+
+        let noun=document.getElementById('noun')
+        let place=document.getElementById('place')
+        let verb=document.getElementById('verb')
+        libButton.addEventListener('click', function(){
+            event.preventDefault()
+            let libButton=document.getElementById('lib-button')
+            let adjective=document.getElementById('adjective').value
+            let person=document.getElementById('person').value
+            let noun=document.getElementById('noun').value
+            let place=document.getElementById('place').value
+            let verb=document.getElementById('verb').value
+            let story=document.getElementById('story')
+            if(noun.length == 0 && adjective.length == 0 && person.length == 0 && verb.length == 0 && place == 0){
+            alert('error')
+            }else{
+               story.textContent=`the one was a ${noun} dfsajklfs f snklf;dask${adjective} f safsla;jdfsh akj;s${person}f hgdrghjakl gdhafklghda;t42    ] uthfesi${verb} dfklsa ;khjaskes fjk${verb} ${place}`
+            }
+        
+        })
+        
+        // console.log(bold)
+        // for(let i=0; i<ps.length; i++){
+        // ps[i].style.fontWeight = "900";
+   
+
+    //     let story=document.getElementById('story')
+    //     story=`the one was a ${noun} dfsajklfs f snklf;dask${adjective} f safsla;jdfsh akj;s${person}f hgdrghjakl gdhafklghda;t42    ] uthfesi${verb} dfklsa ;khjaskes fjk${verb} ${place}
+    // </script>
+
+ </body>
+</html>

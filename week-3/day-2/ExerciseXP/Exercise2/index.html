@@ -14,14 +14,35 @@
     <input type="text" id="lname" name="lname"><br><br>
     <input type="submit" value="Submit" id="submit">
   </form> 
+  <ul class="usersAnswer"></ul>
 
   <script>
     console.log(document.body.firstElementChild)
     console.log(document.getElementById('fname'))
     console.log(document.getElementById('lname'))
     console.log(document.getElementById('submit'))
-    console,log(document.getElementsByName('fname'))
-    console,log(document.getElementsByName('lname'))
+    console.log(document.getElementsByName('fname'))
+    console.log(document.getElementsByName('lname'))
+    console.log(document.body.children[1])
+    document.getElementById('submit').addEventListener('click', function(event){
+    event.preventDefault()
+    let ul=document.body.children[1]
+
+    let fname = document.getElementById('fname').value
+    let lname = document.getElementById('lname').value
+    if(fname.length == 0){
+      alert('error')
+    }else{let li =document.createElement('li')
+    ul.appendChild(li)
+    li.innerHTML=fname}
+    if(lname.length == 0){
+      alert('error')
+    }else{let li =document.createElement('li')
+      ul.appendChild(li)
+      li.innerHTML=lname
+    }
+
+    })
 </script>
 </body>
 </html>
