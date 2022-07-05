@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+        p {
+          background: yellow;
+          color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <button id="clear">Clear Interval</button>
+  
+    <script>
+        let div = document.getElementById('container')
+        let button = document.getElementById('clear')
+        let p= document.getElementsByTagName('p')
+        let timeout;
+        myFunction()
+        function myFunction() {
+        timeout = setTimeout(alertFunc, 2000);
+        }
+        function alertFunc() {
+        alert("Hello world!");
+        }
+        let sum=0;
+        function pHello() {
+            if (sum<5){
+        let p=document.createElement("p");
+        p.innerText = "hello world";
+        document.getElementById('container').appendChild(p)
+        sum++
+        }}
+        // function p() {
+        // timeout = setTimeout(pHello, 2000)
+        // ;
+        // if (sum<5){
+        let a = setInterval(pHello, 2000)
+        
+        
+        console.log(p)
+        function myStopFunction() {
+        clearInterval(a);
+        }
+        button.addEventListener("click", myStopFunction);
+        // setTimeout(myStopFunction, 11000)
+        
+    </script>
+    </body>
+    </html>

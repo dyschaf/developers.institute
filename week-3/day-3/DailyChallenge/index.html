@@ -1,0 +1,70 @@
+<!-- In this exercise we will be creating a webpage with a black background as the universe and we will fill the universe with planets and their moons.
+We will provide the HTML page.
+You only have to work with a JS file.
+
+Create an array which value is the planets of the solar system.
+For each planet in the array, create a <div> using createElement. This div should have a class named "planet".
+Each planet should have a different background color. (Hint: you could add a new class to each planet - each class containing a different background-color).
+Finally append each div to the <section> in the HTML (presented below).
+Bonus: Do the same process to create the moons.
+Be careful, each planet has a certain amount of moons. How should you display them?
+Should you still use an array for the planets ? Or an array of objects ? -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+       
+    <script>
+        let input=document.createElement("input")
+        input.setAttribute('type', 'text' )
+        document.body.appendChild('input')
+        
+                function myFunction() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+        }
+        // function checkKeycode(e) {
+        // var keycode;
+        // if (window.event)
+        //     {keycode = window.event.keyCode;}
+        // else if (e)
+        //     {keycode = e.which;}
+        // alert("keycode: " + keycode);
+        // }
+    //    if ( prompt.event.keyCode == 65<=90){
+    //     console.log(prompt)
+    //    }
+       
+//         function validateCustomerName(){
+//     var validatedName = "";
+//     var restrictedCharactersArray = ["0","1","2","3","4","5","6","7","8","9","~","`","!","@","#","$","%","^","&","*","(",")","-","_",
+//         "+","=","{","}","[","]",":",";","'","<",">",",",".","?","/","/\/","|"];
+//     var customerName = document.getElementById("customerName").value;
+//     var numberValidation = (/^[a-zA-Z_ ]+$/g).test(customerName);
+//     if(!numberValidation){
+//         validatedName = "";
+//         var customerNameArray = customerName.split("");
+//         for(var i=0;i<restrictedCharactersArray.length;i++){
+//             var restrictedCharacter = restrictedCharactersArray[i];
+//             if(customerNameArray.indexOf(restrictedCharacter) !== -1){
+//                 for(var j=0; j<customerNameArray.length; j++){
+//                     var customerNameCharacter = customerNameArray[j];
+//                     if(customerNameCharacter !== restrictedCharacter){
+//                         validatedName = validatedName+customerNameCharacter;
+//                     }
+//                 }
+//             }
+//         }
+//         document.getElementById("customerName").value = validatedName;
+//     }
+// }
+    </script>
+    </body>
+</html>

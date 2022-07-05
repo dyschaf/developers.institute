@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+      }
+      </style>
+  </head>
+  <body>
+      <p><button onclick="myMove()">Click Me</button></p>
+      <div id="container">
+        <div id="animate"></div>
+      </div>
+      
+      <script>
+        div =document.getElementById('container')
+        ani =document.getElementById('animate')
+        // setInterval('animate', 1px)
+        let button = document.getElementsByTagName('button')
+        button[0].addEventListener("click", boxLeft)
+        function boxLeft() {
+      let start = Date.now(); // start date
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+        console.log(timePassed)
+        ani.style.left = timePassed / 5.7 + 'px';
+        if (timePassed > 2000) {
+          clearInterval(timer);
+        }
+      }, 20);
+    }
+      </script>
+  </body>
+  </html>
+  
