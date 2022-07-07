@@ -5,11 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style src='style.css'></style>
-    <title>Documet</title>
+	<style>body {
+		box-sizing: border-box;
+		margin: 0;
+		display:flex;
+		background-color: red;
+		
+	}
+	
+	#player1{
+		width:  50vw;
+		height:  100vh;
+		box-sizing: border-box;
+		border: solid black 1px;
+		background-color: blue;
+		color: pink;
+		/* justify-items: center; */
+		/* justify-content: center; */
+	}
+	
+	#player2{
+		width:  50vw;
+		height:  100vh;
+		/* box-sizing: border-box; */
+	
+	}
+	.card{ 
+		margin-top: 10vw;
+		margin-left: 10vw;
+		justify-content: center;
+		width:  200px;
+		height:  250px;
+		background-color: brown;
+		border-radius: 8%;
+	}
+	.btn{
+		margin-top: 15px;
+		margin-left: 11vw;
+		border-radius: 8%;
+		height: 50px;
+		width: 170px;
+	}
+	</style>
+    <title>Documnet</title>
 </head>
 <body>
 	<div class='player1' id="player1">a
-		<div id="card">a
+		<div class="card" id="card">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -37,9 +79,10 @@
 			<span></span>
 			<span></span>
 		</div>
+		<button class="btn">war</button>
 	</div>
 	<div id="player2">a
-		<div id="card">a
+		<div class="card" id="card">a
 			<span></span>
 			<span></span>
 			<span></span>
@@ -66,7 +109,9 @@
 			<span></span>
 			<span></span>
 			<span></span>
+			
 		</div>
+		<button class="btn">War</button>
 	</div>
 <script src="script.js"></script>
 </body>
