@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 🌟 Exercise 1 : Scope
+// Instructions
+// Analyse the code below, and predict what will be the value of a in all the following functions.
+// Write your prediction as comments in a js file.
+// #1
+// function q1() {
+//     var a = 5;
+//     if(a > 1) {
+//         a = 3;
+//     }
+//     alert(a);
+// }
+
+// // run in the console:
+// q1()//=3
+
+// //#2
+// var a = 0;
+// function q2() {
+//     a = 5;
+// }
+
+// function q22() {
+//     alert(a);
+// }
+
+// // run in the console:
+// q22()//=0
+// q2()//=5
+// q22()//=5
+
+// //#3
+// function q3() {
+//     window.a = "hello";
+// }
+
+
+// function q32() {
+//     alert(a);
+// }
+
+// // run in the console:
+// q3()//=hello
+// q32()//=5
+
+// //#4
+// var a = 1;
+// function q4() {
+//     var a = "test";
+//     alert(a);
+// }
+
+
+// // run in the console:
+// q4()//test
+
+// //#5
+// var a = 2;
+// if (true) {
+//     var a = 5;
+//     alert(a);
+// }
+// alert(a);//=5
+
+// // 🌟 Exercise 2 : Ternary Operator
+// // Instructions
+// // Using the code below:  return true ;
+
+let winBattle = () => {true};
+
+let experiencePoints = winBattle ? 10 : 1;
+console.log(experiencePoints);
+
+    // let experiencePoints
+//     if(experiencePoints=true){
+//     experiencePoints=10
+//     }else{experiencePoints=1}
+//     console.log(experiencePoints)
+//     return true;
+// }
+
+// Transform the winBattle() function to an arrow function.
+// Create a variable called experiencePoints.
+// Assign to this variable, a ternary operator. If winBattle() is true, the experiencePoints variable should be equal to 10, else the variable should be equal to 1.
+// Console.log the experiencePoints variable.
+
+// 🌟 Exercise 3
+// Write a JavaScript arrow function that checks whether the value of the argument passed, is a
+// string or not. Use ternary operator
+// Check out the example below to see the expected output
+// Example:
+// console.log(isString('hello'));
+// //true
+// console.log(isString([1, 2, 4, 0]));
+// //false
+let isString = (item) => typeof(item) == "string";
+/*Note: istructions said to use ternary operator, but I believe it's repetative because
+the statement typeof(item)=='string' is already a boolean.*/
+console.log(isString("hello")); //true
+console.log(isString(45)); //false
+console.log(isString(["a", "b", "c"])); //false
+
+// Write a JavaScript program that displays the colors in the following order : “1# choice is Blue.” “2# choice is Green.” “3# choice is Red.” ect…
+// Check if at least one element of the array is equal to the value “Violet”. If yes, console.log("Yeah"), else console.log("No...")
+// Hint : Use the array methods taught in class. Look at the lesson Array Methods.
+let colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+colors.includes('Violet') ? console.log('yes'):console.log('no')
+colors.forEach((arr, i) => console.log(`${i+1}# is choice ${arr}`))
+// 
+
+
+// 🌟 Exercise 5 : Colors #2
+// Instructions
+// Using these arrays :
+
+let color = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+let ordinal = ["th","st","nd","rd"];
+color.forEach((i, j) => j < 3 ? console.log(`${[j+1]}${ordinal[j+=1]} choice is ${i}`): console.log(`${[j+1]}${ordinal[0]} choice is ${i}`))
+// color.forEach
+// Write a JavaScript program that displays the colors in the following order : “1st choice is Blue .” “2nd choice is Green.” “3rd choice is Red.” ect…
+// Hint : Use the array methods taught in class and ternary operator.
+// classmates.forEach((element, index) => {
+// 	if(element === "Sophie"){
+// 		classmates[index] += "&"
+// 	}else{
+// 		classmates[index] += "!"
+// 	}
+// })
+
+    </script>
+</body>
+</html>
