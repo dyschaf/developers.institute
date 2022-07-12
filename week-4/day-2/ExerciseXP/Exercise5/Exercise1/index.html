@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="q"></div>
+    <div id="p"></div>
+    <script>
+        const makeJuice= ((size)=>{
+        const ingredient=[];
+        const addIngredients = ((a, b, c)=>{
+            for (let i = 0, j = arguments.length; i < j; i++){
+                ingredient.push(arguments[i]);}
+            const div = document.getElementById('q') 
+            const text= document.createTextNode(`The client wants a ${size} juice, containing ${a}, ${b}, ${c}`)
+            div.appendchild(text);
+        })('fdfsd', 'dadsa', 'sadad')('fdfsd', 'dadsa', 'sadad')
+        const displayJuice= ((a, b, c)=>{
+            div2-document.getElementById('p')
+            let text2 = document.createTextNode(`The client wants a ${size} juice, containing ${a}, ${b}, ${c}`)
+            div2.appendchild(text2)
+        })('jhhkhk', 'hjkhjkl', 'hjkhl')
+    })('large')
+    </script>
+</body>
+</html>

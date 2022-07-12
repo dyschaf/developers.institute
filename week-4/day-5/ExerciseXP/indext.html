@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         🌟 Exercise 1 : Location
+// Instructions
+// Analyze the code below. What will be the output?
+// Exercise 1 : Analyzing
+// Instructions
+// Analyze these pieces of code before executing them. What will be the outputs ?
+// ------1------
+const fruits = ["apple", "orange"];
+const vegetables = ["carrot", "potato"];
+
+const result = ['bread', ...vegetables, 'chicken', ...fruits];
+console.log(result);
+
+// ------2------
+const country = "USA";
+console.log([...country]);
+
+// ------Bonus------
+let newArray = [...[,,]];
+// console.log(newArray);
+
+// 🌟 Exercise 2 : Employees
+// Instructions
+// Using this array:
+let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resident' },
+             { firstName: 'Chloe', lastName: 'Alnaji', role: 'Full Stack Resident' },
+             { firstName: 'Jonathan', lastName: 'Baughn', role: 'Enterprise Instructor' },
+             { firstName: 'Michael', lastName: 'Herman', role: 'Lead Instructor' },
+             { firstName: 'Robert', lastName: 'Hajek', role: 'Full Stack Resident' },
+             { firstName: 'Wes', lastName: 'Reid', role: 'Instructor'},
+             { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}];
+// Using the map() method, push into a new array the firstname of the user and a welcome message. You should get an array that looks like this :
+// const welcomeStudents = ["Hello Bradley", "Hello Chloe", "Hello Jonathan", "Hello Michael", "Hello Robert", "Hello Wes", "Hello Zach"]
+const welcomeStudents=users.map((element, i)=>{console.log('hello '+element.role['Full Stack Resident'] )})
+
+// 2. Using the filter() method, create a new array, containing only the Full Stack Residents.
+const onlyfullStack = users.filter(element=> element.role=='Full Stack Resident')
+
+console.log(onlyfullStack)
+// 3. Bonus : Chain the filter method with a map method, to return an array containing only the lastName of the Full Stack Residents.
+
+
+
+// const person = {
+//     name: 'John Doe',
+//     age: 25,
+//     location: {
+//         country: 'Canada',
+//         city: 'Vancouver',
+//         coordinates: [49.2827, -123.1207]
+//     }
+// }
+
+// const {name, location: {country, city, coordinates: [lat, lng]}} = person;
+
+// console.log(`I am ${name} from ${city}, ${country}. Latitude(${lat}), Longitude(${lng})`);
+// // I am John Doe from Vancouver, Canada. Latitude(49.2827), Longitude(-123.1207)
+// // 🌟 Exercise 2: Display Student Info
+// // Instructions
+// function displayStudentInfo(objUser){
+//     return objUser.first, objUser.last =objUser
+//     console.log(objUser)
+// }
+
+// displayStudentInfo({first: 'Elie', last:'Schoppik'});
+
+
+
+// Using the code above, destructure the parameter inside the function and return a string as the example seen below:
+//output : 'Your full name is Elie Schoppik'
+//         const students = [
+//  	{name: 'Rich', score: 33}, 
+//  	{name: 'Peter', score: 55},
+//  	{name: 'John', score: 75}
+// ];
+// const sum = students.reduce((element, person) =>element+person[score],0)
+// console.log(sum)
+// let voters = [
+//     {name:'Bob' , age: 30, voted: true},
+//     {name:'Jake' , age: 32, voted: true},
+//     {name:'Kate' , age: 25, voted: false},
+//     {name:'Sam' , age: 20, voted: false},
+//     {name:'Bob' , age: 30, voted: true},
+// ];
+// const vote= voter.reduce((acc, person)=>acc+person[voted], 0 )
+    </script>
+</body>
+</html>
