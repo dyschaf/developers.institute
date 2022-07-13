@@ -41,7 +41,7 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
              { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}];
 // Using the map() method, push into a new array the firstname of the user and a welcome message. You should get an array that looks like this :
 // const welcomeStudents = ["Hello Bradley", "Hello Chloe", "Hello Jonathan", "Hello Michael", "Hello Robert", "Hello Wes", "Hello Zach"]
-const welcomeStudents=users.map((element, i)=>{console.log('hello '+element.firstName )})
+const welcomeStudents=users.map((element, i)=>{console.log('hello '+element.firstName + element.lastName)})
 
 // 2. Using the filter() method, create a new array, containing only the Full Stack Residents.
 const onlyfullStack = users.filter(element=> element.role=='Full Stack Resident')
