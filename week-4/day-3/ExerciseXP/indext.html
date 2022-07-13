@@ -41,7 +41,7 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
              { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor'}];
 // Using the map() method, push into a new array the firstname of the user and a welcome message. You should get an array that looks like this :
 // const welcomeStudents = ["Hello Bradley", "Hello Chloe", "Hello Jonathan", "Hello Michael", "Hello Robert", "Hello Wes", "Hello Zach"]
-const welcomeStudents=users.map((element, i)=>{console.log('hello '+element.role['Full Stack Resident'] )})
+const welcomeStudents=users.map((element, i)=>{console.log('hello '+element.firstName )})
 
 // 2. Using the filter() method, create a new array, containing only the Full Stack Residents.
 const onlyfullStack = users.filter(element=> element.role=='Full Stack Resident')
@@ -49,7 +49,31 @@ const onlyfullStack = users.filter(element=> element.role=='Full Stack Resident'
 console.log(onlyfullStack)
 // 3. Bonus : Chain the filter method with a map method, to return an array containing only the lastName of the Full Stack Residents.
 
+// 🌟 Exercise 3 : Star Wars
+// Instructions
+// Using this array 
+let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
 
+// Use the reduce() method to combine all of these into a single string.
+
+const newEpic = epic.reduce((acc, current) => {return acc+current})
+console.log(newEpic)
+// 🌟 Exercise 4 : Employees #2
+// Instructions
+// Using this object:
+
+let students = [{name: "Ray", course: "Computer Science", isPassed: true}, 
+               {name: "Liam", course: "Computer Science", isPassed: false}, 
+               {name: "Jenner", course: "Information Technology", isPassed: true}, 
+               {name: "Marco", course: "Robotics", isPassed: true}, 
+               {name: "Kimberly", course: "Artificial Intelligence", isPassed: false}, 
+               {name: "Jamie", course: "Big Data", isPassed: false}];
+// Using the filter() method, create a new array, containing the students that passed the course.
+const passed =students.filter(element=> element.isPassed==1)
+                    .forEach(element=> `Good job ${element.name}, you passed the course in ${element.course}`)
+console.log(passed)
+// console.log(`Good job ${element.name}, you passed the course in ${element.course}`)
+// Bonus : Chain the filter method with a forEach method, to congratulate the students with their name and course name (ie. “Good job Jenner, you passed the course in Information Technology”, “Good Job Marco you passed the course in Robotics” ect…)
 
 // const person = {
 //     name: 'John Doe',
