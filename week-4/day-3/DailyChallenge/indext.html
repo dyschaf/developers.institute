@@ -24,11 +24,14 @@ let inventory = [
   { id: 4, car_make: "Land Rover", car_model: "Defender Ice Edition", car_year: 2010 },
   { id: 5, car_make: "Honda", car_model: "Accord", car_year: 1995 },
 ];
+user
+.filter((person)=> person['role'].includes('Full Stack Resident'))
+.maps((person)=> person['firstName'])
 // const honda =inventory.filter(element=> element.car_model.includes('handa'))
-function getHonda(inventory) {
-   const the1stHonda = inventory.find((item,i ) =>{return item.car_make === "Honda"})
-  console.log(the1stHonda)}
-  getHonda(inventory)
+// function getHonda(inventory) {
+//    const the1stHonda = inventory.find((item,i ) =>{return item.car_make === "Honda"})
+//   console.log(the1stHonda)}
+//   getHonda(inventory)
 
 // Part II
 
