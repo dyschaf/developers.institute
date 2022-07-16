@@ -1,0 +1,32 @@
+body{
+    box-sizing: border-box;
+    /* display: grid; */
+    background-color: purple;
+    background-image: URL(circuit-pattern.png);
+}
+nav{
+    display: flex;
+}
+#display{
+    display: flex;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* grid-template-rows:auto,auto auto; */
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+flex-wrap: wrap
+
+}
+.container{
+    /* / flex-direction: row; */
+    grid-template-rows:repeat(3, 1fr);
+    /* grid-auto-columns: minmax() */
+    background-image: URL(card-pattern.png);
+    background-color: rgb(16, 146, 221);
+
+}
+.img{
+    background-color: lightblue;
+    border-radius: 50%;
+}
