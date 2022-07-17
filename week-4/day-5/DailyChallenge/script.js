@@ -1,11 +1,13 @@
 const anagram = (a, b) => {
   const word1 = a
     .toLowerCase()
+    .replace(" ", "")
     .split("")
     .sort()
     .reduce((e, i) => e + i);
   const word2 = b
     .toLowerCase()
+    .replace(" ", "")
     .split("")
     .sort()
     .reduce((e, i) => e + i);
