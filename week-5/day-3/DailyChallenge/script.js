@@ -104,3 +104,31 @@ let morse = `{
 // .-..
 // .-..
 // ---
+const toJS = function () {
+  let morseObjJS = JSON.parse(morse);
+  return new Promise((resolve, reject) => {
+    if (Object.keys(morseObjJS).length !== 0) {
+      resolve(morseObjJS);
+    } else {
+      reject("empty");
+    }
+  });
+};
+const toMorse = function (morseJS) {
+  const userinput = prompt("type in morse code");
+  const inputarr = userinput.toLowerCase().split(" ");
+  const keyarr = Object.keys(keyarr);
+  const result = inputarr.every((element) => keyarr.includes(element));
+  return new Promise((resolve, reject) => {
+    if (!result) {
+      reject("not included");
+    } else {
+      const arrMorse = inputarr.map((elem) => morseJS[elem]);
+      resolve(arrMorse);
+    }
+  });
+};
+toJS()
+  .then((res) => toMorse(res))
+  .then((arrmorse) => console.log(arrmorse.join("")))
+  .catch((error) => console.log(error));
