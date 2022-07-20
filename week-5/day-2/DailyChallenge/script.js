@@ -13,9 +13,7 @@ let xhr = new XMLHttpRequest();
 const setRequest = function () {
   xhr.open(
     "GET",
-    "https://api.giphy.com/v1/gifs/search?q=" +
-      val +
-      "&limit=1&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My"
+    `https://api.giphy.com/v1/gifs/random?tag=${value}&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My`
   );
   xhr.responseType = "json";
   xhr.send();
