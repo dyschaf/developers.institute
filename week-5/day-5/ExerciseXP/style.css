@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    background-image: url("https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp");
+    font-family: 'Helvetica Neue';
+    color: yellow;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+}
+#header {
+
+    background: url("https://i.dlpng.com/static/png/253278_thumb.png") center center no-repeat;
+    width: 400px;
+    height: 300px;
+    margin:  0 auto;
+    margin-top: -20px;
+  }
+  #container{
+    border: solid yellow 10px;
+    border-radius: 4%;
+  }
+  #container{
+    margin-left: 23vw;
+    width: 50vw;
+    height: 30vh
+  }
