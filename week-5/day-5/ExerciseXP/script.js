@@ -8,15 +8,21 @@ let homeWorld = document.querySelector("#homeWorld");
 async function getapi() {
   updateWithLoading();
   const randomNumber = Math.floor(Math.random() * 88 + 1);
-  const apiUrl = "https://swapi.dev/api/people/" + randomNumber + "/";
+  const apiUrl = `https://swapi.dev/api/people/${randomNumber}`;
   try {
     const api = await fetch(apiUrl);
     const json = await api.json();
     // updateWithLoading();
     const homeworld = await fetch(json.homeworld);
+
     //   console.log(homeWorldJson);
     const homeworldJson = await homeworld.json();
-    append(json, homeworldJson.name);
+    if (homeworld.status !== 200 || api.status !== 200) {
+      throw new Error("Wrong response");
+      updateInfoWithError();
+    } else {
+      append(json, homeworldJson.name);
+    }
   } catch (error) {
     console.log(error);
     updateInfoWithError();
@@ -37,7 +43,6 @@ function append(res, hwRes) {
 }
 
 function updateWithLoading() {
-  //   Icon link: https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons
   names.innerHTML =
     '<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i> <p>Loading...</p>';
   height.innerText = "";

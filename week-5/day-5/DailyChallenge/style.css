@@ -1,0 +1,18 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-image: URL(https://media.istockphoto.com/photos/background-from-collection-of-all-world-money-banknotes-picture-id946032350?);
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20vw;
+    margin-right: 20vw; 
+    height: 500px;
+    background-color: rgba(271, 76, 53, .5);
+}
