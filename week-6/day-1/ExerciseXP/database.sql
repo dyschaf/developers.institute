@@ -17,6 +17,7 @@
 -- item_price money NOT NULL);
 
 -- CREATE TABLE customers(
+-- cust_id SERIAL PRIMARY KEY,
 -- first_name VARCHAR (50) NOT NULL,
 -- last_name VARCHAR (50) NOT NULL);
 -- INSERT INTO items (item_name, item_price)
