@@ -1,0 +1,36 @@
+-- SELECT * From items order by item_price ASC;
+-- SELECT * From items where item_price  >'$79.00' order by item_price ASC;
+-- select * from customers;
+-- SELECT cust_id From customers order by first_name ASC;
+-- SELECT last_name From customers order by last_name DESC;
+-- select * from customer;
+-- select first_name as fullname, last_name as fullname from customer  ;
+-- SELECT create_date FROM customer group by create_date;
+-- SELECT * FROM customer order by first_name DESC;
+-- SELECT film_id, title, description, release_year, rental_rate FROM film order by rental_rate ASC;
+-- SELECT address, address2, phone FROM address where district = 'Texas';
+-- select * from film where film_id=15 or film_id=150;
+-- SELECT film_id, title, description, length, rental_rate FROM film where title Ilike 'harry potter'
+--  SELECT film_id, title, description, length, rental_rate FROM film where title Ilike '%_a%'
+-- SELECT film_id, title, description, length, rental_rate FROM film order by rental_rate desc OFFSET 0 ROWS FETCH FIRST 10 ROWS ONLY;
+-- Write a query which will join the data in the customer table
+-- and the payment table.You want to get the amount and the 
+-- date of every payment made by a customer, ordered by their
+-- id (from 1 to…).
+
+-- SELECT first_name,last_name,amount, payment_date
+-- FROM customer
+-- inner JOIN payment
+-- ON payment.customer_id = customer.customer_id
+-- order by payment_id ASC;
+
+-- SELECT title, film.film_id
+-- FROM film
+-- inner JOIN inventory
+-- ON film.film_id = inventory.inventory_id
+-- where film.film_id != inventory.film_id
+
+-- select city, country
+-- from city
+-- inner join country
+-- on city.city_id = country.country_id
