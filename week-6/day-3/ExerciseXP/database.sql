@@ -1,0 +1,61 @@
+-- select title,name
+-- from film
+-- join language
+-- on film.language_id = language.language_id;--1
+-- select film.title, film.description, language.name
+-- from film
+-- left join language
+-- on film.language_id = language.language_id;
+-- select film.title, film.description, language.name
+-- from film
+-- right join language
+-- on film.language_id = language.language_id;--2
+-- create table new_film (
+-- 	film_id serial primary key not null,
+-- 	name varchar(50)
+-- ) ;
+-- INSERT into new_film(name)
+-- VALUES(
+-- 	('fdsafd')
+-- );
+-- INSERT into new_film(name)
+-- VALUES(
+-- 	('fdsfadsghdf')
+-- );
+-- create table customer_review (
+-- 	review_id serial primary key not null,
+-- 	film_id INTEGER NOT NULL REFERENCES new_film(film_id) ON DELETE CASCADE,
+-- 	customer_id INTEGER NOT NULL REFERENCES customer(customer_id),
+-- 	language_id INTEGER NOT NULL REFERENCES language(language_id ),
+-- 	title VARCHAR(50) ,
+-- 	score smallint check(score between 1 and 10),
+-- 	review_text text,
+-- 	last_update date
+-- );
+
+-- INSERT into customer_review( film_id, customer_id, language_id ,title , score, review_text, last_update ) 
+-- VALUES(
+-- 	(SELECT film_id FROM new_film where film_id = 1),
+-- 	(SELECT customer_id FROM customer where customer_id = 1), 
+-- 	(SELECT language_id FROM language where name  = 'English'),
+-- 	'random',
+-- 	5,
+-- 	'fdsalk fdsafsla dskalfdsa dlkfjdksla',
+-- 	now()
+-- 	);
+	
+-- INSERT into customer_review( film_id, customer_id, language_id ,title , score, review_text, last_update ) 
+-- VALUES(
+-- 	(SELECT film_id FROM new_film where film_id = 2),
+-- 	(SELECT customer_id FROM customer where customer_id = 2), 
+-- 	(SELECT language_id FROM language where name  = 'English'),
+-- 	'random',
+-- 	7,
+-- 	'fdssddsalk fddsfdsf  fskafgdsl FEdfsasafsla dskalfdsa dlkfjdksla',
+-- 	now()
+-- 	)
+-- DELETE  FROM new_film where film_id = 1;
+	select * from customer_review
+
+	
+	
