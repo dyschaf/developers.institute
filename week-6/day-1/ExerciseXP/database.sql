@@ -39,3 +39,8 @@
 -- SELECT * from customers WHERE last_name LIKE 'Smith'; --No records becasue noone has that name
 -- SELECT * from customers WHERE last_name LIKE 'Jones';
 -- SELECT * from customers WHERE first_name NOT LIKE 'Scott';
+-- SELECT * From items order by item_price ASC;
+-- SELECT * From items where item_price  >'$79.00' order by item_price ASC;
+-- select * from customers;
+-- SELECT cust_id From customers order by first_name ASC;
+-- SELECT last_name From customers order by last_name DESC;

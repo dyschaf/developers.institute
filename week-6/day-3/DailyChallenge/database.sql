@@ -22,10 +22,15 @@
 -- --4
 -- select first_name, isLoggedIn
 -- from customer
--- right Join customer_profile
+-- inner Join customer_profile
 -- on customer.customer_id = customer_profile.customer_id,
+-- where isLoggedIn;
 
--- count(isLoggedIn = 'true');
+-- select count(*)
+-- from customer
+-- left Join customer_profile
+-- on customer.customer_id = customer_profile.customer_id,
+-- where isLoggedIn != true or isLoggedIn is null
 
 -- -- 2
 -- -- 1
@@ -71,8 +76,23 @@
 -- ((select book_id from book where title = 'Harry Potter'),
 --  (select student_id from student where name = 'Bob'),'2021/08/12');
  select * from library;
- select student.name, book.title
- from student
- inner join library
- on book_fk_id = student_fk_id
-
+ select name, title, name
+ from library
+ inner join book on book_id = book_fk_id
+ inner join student on student_fk_id = student_id
+ 
+ select round(avg(age),1)
+ from library
+ inner join book on book_fk_id = book_id
+ inner join student on student_fk_id = student_id
+ where title= ' Alice In Wonderland'
+ 
+ select title, round(avg(age),1) as avg_age
+ from library
+ inner join book on book_fk_id = book_id
+ inner join student on student_fk_id = student_id
+ group by title
+ order by avg_age asc
+ 
+DELETE FROM student WHERE student_name='Bob';
+ 
