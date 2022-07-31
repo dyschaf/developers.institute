@@ -50,7 +50,7 @@ arr[1];
 //     function x() {
 //     	a = 5;
 //     ```
-// no it not a global Variable it's in a function has aits own local storage
+// no it not a global Variable it's in a function has its own local storage
 // ​
 // #### Functions
 // ​
@@ -107,9 +107,11 @@ arr[1];
 // 12. DOM exercise
 //
 //       1. Part I : Create a button in your HTML page, when the user will click the the button a paragraph will be added on the DOM with the content "New Paragraph". Use arrow functions
-// ​x.addEventListener("click", func2 =>document.body.appendChild.document.createElement('p').textContent="New Paragraph")
+// ​x.addEventListener("click", func2)
+// const func2 =() =>document.body.appendChild.document.createElement('p').textContent="New Paragraph")
 //       2. Part II : Add to each new paragraph a event listener of mouse over. When you hoover on a paragraph, it should become red
-// p.addEventListener("mouseover", func1 =>p.style.color = "blue");
+// p.addEventListener("mouseover", func1 )
+// const func1=(e)=>event.target.style.color = "red");
 // #### Array Methods
 // ​
 // 14. What is the value of `passed` in the following code?
@@ -197,7 +199,7 @@ arr[1];
 //         console.log(data)
 //       })
 //     ```
-// ​SUCCESESS!
+//  resoled ​SUCCESESS!
 // 22. What log will be made by the following code, after 2 seconds?
 // ​
 //     ```javascript
@@ -236,7 +238,7 @@ arr[1];
 //     try {
 //         const api = await fetch('https://catfact.ninja/fact');
 //         if (api.status !== 200) {
-//           console.log(error);
+//           throw new Error('fact problem')
 //         } else {
 //           const res = await api.json()
 //         }
@@ -244,3 +246,10 @@ arr[1];
 //         console.log(error);
 //       }
 //     }
+// function display() {
+const { fact } = api;
+//   const p = document.createElement("p");
+//   const text = documnet.createTextNode(api["fact"]);
+//   p.appendChild(text);
+//   document.body.appendChild(p);
+// }
