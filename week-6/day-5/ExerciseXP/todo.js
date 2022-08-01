@@ -63,7 +63,7 @@ function appendDescription(e) {
   // console.log(e);
   e.target.parentElement.children[3].style.display = "block";
 }
-for (let a = 0; a < todo.length; a++) {
+for (let a = 0; a < todo.length + 1; a++) {
   const divholder = document.getElementsByTagName(`ul`);
   divholder[a].addEventListener("click", appendDescription);
 }
