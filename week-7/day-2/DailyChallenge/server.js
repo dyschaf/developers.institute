@@ -10,15 +10,9 @@ app.get("/aboutMe/:bobby", function (req, res) {
 app.get("/pic/", function (req, res) {
   res.sendfile(__dirname + "/2♠.png");
 });
-app.use(express.static(__dirname + "public"));
+app.use(express.static(__dirname + "/public"));
 app.get("/form/", function (req, res) {
-  res.send(`<form action="/formData" method="post">
-        <label for="email">email:</label>
-        <input type="email" id="email" name="email"><br><br>
-        <label for="message">message</label>
-        <input type="text" id="message" name="message"><br><br>
-        <input type="submit" value="Submit">
-      </form>`);
+  //   res.send();
 });
 app.post("/formData/", function (req, res) {
   const { email, message } = req.body;
