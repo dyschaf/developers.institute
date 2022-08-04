@@ -9,7 +9,6 @@ function stepscount(steps) {
   const strarray = steps.split("");
   console.log(strarray);
   let count = [];
-
   let left = 0;
   let right = 0;
   strarray.forEach((item) => {
