@@ -1,8 +1,8 @@
 const sendLogin = () => {
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  const username = req.body.username; //username provided
+  const password = req.body.password; //password provided
 
-  fetch("http://localhost:5000/login", {
+  fetch("/login_fail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -21,13 +21,15 @@ const sendLogin = () => {
 };
 
 const sendPostData = () => {
-  const firstName = document.getElementById("fname").value;
-  const lastName = document.getElementById("lname").value;
-  const userName = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+  saveUser(
+    req.body.fname,
+    req.body.lname,
+    req.body.email,
+    req.body.username,
+    req.body.password
+  );
 
-  fetch("http://localhost:5000/register.html", {
+  fetch("/signup_err", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
