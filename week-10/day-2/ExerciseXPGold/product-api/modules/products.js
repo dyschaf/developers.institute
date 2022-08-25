@@ -5,11 +5,11 @@ dotenv.config();
 const db = knex({
   client: "pg",
   connection: {
-    host: process.evn.DB_HOST,
-    port: process.evn.DB_PORT,
-    user: process.evn.DB_USER,
-    password: process.evn.DB_PASS,
-    database: process.evn.DB_NAME,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
     ssl: { rejectUnauthorized: false },
   },
 });
@@ -19,7 +19,11 @@ const getAllProducts = () => {
 const getProduct = (product_id) => {
   return db("products").select("id", "name", "price").where({ id: product_id });
 };
+const searchProduct = (query) => {
+  return db("products").select("id", "name", "price").whereILike(query);
+};
 module.exports = {
   getAllProducts,
   getProduct,
+  searchProduct,
 };

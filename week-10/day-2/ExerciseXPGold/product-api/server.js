@@ -10,4 +10,4 @@ app.use(express.json());
 app.listen(process.env.PORT || 8080, () => {
   console.log(`listen on port ${process.env.PORT}`);
 });
-app.get(`/`, product_router);
+app.get(`/api/products`, product_router);

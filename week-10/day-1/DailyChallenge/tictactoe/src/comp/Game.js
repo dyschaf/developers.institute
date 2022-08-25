@@ -3,19 +3,17 @@ import { Checker } from "./Checker";
 import Board from "./Board";
 
 const Game = () => {
-  const [history, setHistory] = useState[Array(9).fill(null)];
+  const [squares, setSquares] = useState(Array(9).fill(null));
   const [stepNumber, setstepNumber] = useState(0);
   const [xIsNext, setxIsNext] = useState(true);
-  const winner = Checker(history, [stepNumber]);
+  const winner = Checker(squares);
   const xo = xIsNext ? "X" : "O";
   const handleClick = (i) => {
-    const historyPoint = history.slice(0, stepNumber + 1);
-    const current = historyPoint[stepNumber];
-    const squares = [...current];
+    console.log({ i });
     if (winner || squares[i]) return;
     squares[i] = xo;
-    setHistory([...historyPoint, squares]);
-    setstepNumber(historyPoint.length);
+    setSquares(squares);
+    // setstepNumber(historyPoint.length);
     setxIsNext(!xIsNext);
   };
   const reset = () => {
@@ -29,8 +27,8 @@ const Game = () => {
     };
   return (
     <>
-      <hi>Tic Tac Toe</hi>
-      <Board squares={history[setstepNumber]} onclick={handleClick} />
+      <h1>Tic Tac Toe</h1>
+      <Board squares={squares} onClick={handleClick} />
       <div className="info-wrapper">
         <div>
           <h3>History</h3>

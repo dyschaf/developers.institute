@@ -1,4 +1,4 @@
-const Checker = (squares) => {
+export const Checker = (squares) => {
   const patterns = [
     //horizontal
     [0, 1, 2],
@@ -16,8 +16,9 @@ const Checker = (squares) => {
   ];
   for (let i = 0; i < patterns.length; i++) {
     const [a, b, c] = patterns[i];
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+    const cur = squares[a];
+    if (cur && cur === squares[b] && cur === squares[c]) {
+      return cur;
     }
   }
   return null;
